@@ -1,7 +1,7 @@
 #include <stdio.h>
-#define reg 'a';               //initialising variable 
+#define reg 'a'               //initialising variable 
 #define set_bit(x,y) x|=(1<<y); // macro function to set the y+1th bit to 1
-#define clear_bit(x,y) x&=(1<<y); // macro function to clear the y+1th bit to 0
+#define clear_bit(x,y) x&= ~(1<<y); // macro function to clear the y+1th bit to 0
 int main()
 {
     char arbit = reg; //setting a arbitary variable 
